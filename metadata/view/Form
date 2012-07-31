@@ -1,0 +1,102 @@
+{
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Form",
+        "padding": "15 15 15 15",
+        "scrollable": false
+    },
+    "id": "ExtBox1-ext-gen17142",
+    "designerId": "91cadc37-6bc9-409e-bdc7-69e74ad21eb2",
+    "cn": [
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyToolbar2",
+                "docked": "top",
+                "title": "New Jog"
+            },
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyButton2",
+                        "id": "addRunBackBtn",
+                        "ui": "back",
+                        "text": "Back"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "fieldset",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyFieldSet",
+                "title": null
+            },
+            "cn": [
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyTextField",
+                        "id": "locationField",
+                        "label": null,
+                        "placeHolder": "Where?"
+                    }
+                },
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyTextField1",
+                        "id": "distanceField",
+                        "label": null,
+                        "placeHolder": "How Many Miles?"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyButton3",
+                "id": "addRunButton",
+                "ui": "facebook",
+                "text": "Add Jog"
+            }
+        }
+    ]
+}

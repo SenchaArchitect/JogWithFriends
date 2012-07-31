@@ -1,0 +1,134 @@
+{
+    "name": "JogWithFriends",
+    "settings": {
+        "urlPrefix": "",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "codeGenFormat": "Class",
+        "senchaIoKey": "",
+        "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
+        "instantiateStore": true,
+        "saveOnDeploy": false,
+        "appName": "MyApp"
+    },
+    "xdsVersion": "2.0.0",
+    "xdsBuild": 550,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000495,
+    "framework": "touch20",
+    "topInstanceFileMap": {
+        "281a8703-7989-41f1-91d6-a03aa3d1f13d": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "482e4de5-3e2e-47bd-899e-ba353013ace1": {
+            "paths": [
+                "metadata/model/Run",
+                "app/model/override/Run.js",
+                "app/model/Run.js"
+            ],
+            "className": "Run"
+        },
+        "1a306d38-291b-4995-87e6-e2ed4ef639b3": {
+            "paths": [
+                "metadata/store/Runs",
+                "app/store/override/Runs.js",
+                "app/store/Runs.js"
+            ],
+            "className": "Runs"
+        },
+        "31edccfe-f052-46a8-8932-e461aae9c35b": {
+            "paths": [
+                "metadata/controller/Facebook",
+                "app/controller/override/Facebook.js",
+                "app/controller/Facebook.js"
+            ],
+            "className": "Facebook"
+        },
+        "92df9db1-05be-4d88-83f3-5dd835ab793f": {
+            "paths": [
+                "metadata/controller/Runs",
+                "app/controller/override/Runs.js",
+                "app/controller/Runs.js"
+            ],
+            "className": "Runs"
+        },
+        "09d09013-3123-4817-9494-d896bf96a4a0": {
+            "paths": [
+                "metadata/view/run.List",
+                "app/view/override/run/List.js",
+                "app/view/run/List.js"
+            ],
+            "className": "run.List"
+        },
+        "e4143397-fa49-435c-9a23-245622917696": {
+            "paths": [
+                "metadata/view/NoFriends",
+                "app/view/override/NoFriends.js",
+                "app/view/NoFriends.js"
+            ],
+            "className": "NoFriends"
+        },
+        "ef1a53a0-e694-4763-95f4-509b52a44176": {
+            "paths": [
+                "metadata/view/Main",
+                "app/view/override/Main.js",
+                "app/view/Main.js"
+            ],
+            "className": "Main"
+        },
+        "b4df8eeb-d7cc-48cb-8f70-143e6af15d4d": {
+            "paths": [
+                "metadata/view/Login",
+                "app/view/override/Login.js",
+                "app/view/Login.js"
+            ],
+            "className": "Login"
+        },
+        "91cadc37-6bc9-409e-bdc7-69e74ad21eb2": {
+            "paths": [
+                "metadata/view/Form",
+                "app/view/override/Form.js",
+                "app/view/Form.js"
+            ],
+            "className": "Form"
+        },
+        "2ff46d81-88e0-4df1-a547-3275eb0735aa": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "91cadc37-6bc9-409e-bdc7-69e74ad21eb2",
+            "b4df8eeb-d7cc-48cb-8f70-143e6af15d4d",
+            "ef1a53a0-e694-4763-95f4-509b52a44176",
+            "e4143397-fa49-435c-9a23-245622917696",
+            "09d09013-3123-4817-9494-d896bf96a4a0"
+        ],
+        "store": [
+            "1a306d38-291b-4995-87e6-e2ed4ef639b3"
+        ],
+        "controller": [
+            "31edccfe-f052-46a8-8932-e461aae9c35b",
+            "92df9db1-05be-4d88-83f3-5dd835ab793f"
+        ],
+        "model": [
+            "482e4de5-3e2e-47bd-899e-ba353013ace1"
+        ],
+        "resource": [
+            "2ff46d81-88e0-4df1-a547-3275eb0735aa",
+            "281a8703-7989-41f1-91d6-a03aa3d1f13d"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

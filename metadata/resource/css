@@ -1,0 +1,13 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "resources/css/jogwithfriends.css"
+    },
+    "id": "ExtBox1-ext-gen2067",
+    "designerId": "281a8703-7989-41f1-91d6-a03aa3d1f13d"
+}

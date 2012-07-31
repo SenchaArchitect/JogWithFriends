@@ -1,0 +1,239 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Facebook"
+    },
+    "id": "ExtBox1-ext-gen5823",
+    "designerId": "31edccfe-f052-46a8-8932-e461aae9c35b",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "init",
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    "window.fbAsyncInit = Ext.bind(this.onFacebookInit, this);",
+                    "",
+                    "(function(d){",
+                    "    var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}",
+                    "    js = d.createElement('script'); js.id = id; js.async = true;",
+                    "    js.src = \"//connect.facebook.net/en_US/all.js\";",
+                    "    d.getElementsByTagName('head')[0].appendChild(js);",
+                    "}(document));",
+                    "",
+                    ""
+                ]
+            },
+            "iconCls": "icon-init-function"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onUserTap",
+                "fn": "onUserTap",
+                "implHandler": [
+                    "if (!this.logoutCmp) {",
+                    "    this.logoutCmp = Ext.create('Ext.Panel', {",
+                    "        width: 120,",
+                    "        top: 0,",
+                    "        left: 0,",
+                    "        padding: 5,",
+                    "        modal: true,",
+                    "        hideOnMaskTap: true,",
+                    "        items: [",
+                    "        {",
+                    "            xtype: 'button',",
+                    "            id: 'logoutButton',",
+                    "            text: 'Logout',",
+                    "            ui: 'decline'",
+                    "        }",
+                    "        ]",
+                    "    });",
+                    "}",
+                    "",
+                    "this.logoutCmp.showBy(button);",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#signout"
+            }
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onFacebookInit",
+                "fn": "onFacebookInit",
+                "implHandler": [
+                    "if (JWF.app.facebookAppId === '') return;",
+                    "",
+                    "var me = this;",
+                    "",
+                    "FB.init({",
+                    "    appId  : JWF.app.facebookAppId,",
+                    "    cookie : true",
+                    "});",
+                    "",
+                    "FB.Event.subscribe('auth.logout', Ext.bind(me.onLogout, me));",
+                    "",
+                    "FB.getLoginStatus(function(response) {",
+                    "",
+                    "    clearTimeout(me.fbLoginTimeout);",
+                    "",
+                    "    me.hasCheckedStatus = true;",
+                    "    Ext.Viewport.setMasked(false);",
+                    "",
+                    "    Ext.get('splashLoader').destroy();",
+                    "    Ext.get('rwf-body').addCls('greyBg');",
+                    "",
+                    "    if (response.status == 'connected') {",
+                    "        me.onLogin();",
+                    "    } else {",
+                    "        me.login();",
+                    "    }",
+                    "});",
+                    "",
+                    "me.fbLoginTimeout = setTimeout(function() {",
+                    "",
+                    "    Ext.Viewport.setMasked(false);",
+                    "",
+                    "    Ext.create('Ext.MessageBox', {",
+                    "        title: 'Facebook Error',",
+                    "        message: [",
+                    "        'Facebook Authentication is not responding. ',",
+                    "        'Please check your Facebook app is correctly configured, ',",
+                    "        'then check the network log for calls to Facebook for more information.',",
+                    "        'Restart the app to try again.'",
+                    "        ].join('')",
+                    "    }).show();",
+                    "",
+                    "}, 10000);",
+                    ""
+                ]
+            }
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "login",
+                "fn": "login",
+                "implHandler": [
+                    "Ext.Viewport.setMasked(false);",
+                    "var splash = Ext.getCmp('login');",
+                    "if (!splash) {",
+                    "    Ext.Viewport.add({ xclass: 'JWF.view.Login', id: 'login' });",
+                    "}",
+                    "Ext.getCmp('login').showLoginText();"
+                ]
+            }
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onLogin",
+                "fn": "onLogin",
+                "implHandler": [
+                    "var me = this,",
+                    "    errTitle;",
+                    "",
+                    "FB.api('/me', function(response) {",
+                    "",
+                    "    if (response.error) {",
+                    "        FB.logout();",
+                    "",
+                    "        errTitle = \"Facebook \" + response.error.type + \" error\";",
+                    "        Ext.Msg.alert(errTitle, response.error.message, function() {",
+                    "            me.login();",
+                    "        });",
+                    "    } else {",
+                    "        JWF.userData = response;",
+                    "        if (!me.main) {",
+                    "            me.main = Ext.create('JWF.view.Main', {",
+                    "                id: 'main'",
+                    "            });",
+                    "        }",
+                    "        Ext.Viewport.setActiveItem(me.main);",
+                    "        Ext.getStore('Runs').load();",
+                    "    }",
+                    "});"
+                ]
+            }
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "logout",
+                "fn": "logout",
+                "implHandler": [
+                    "Ext.Viewport.setMasked({xtype: 'loadmask', message: 'Logging out...'});",
+                    "FB.logout();"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#logoutButton"
+            }
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onLogout",
+                "fn": "onLogout",
+                "implHandler": [
+                    "if (!this.hasCheckedStatus) return;",
+                    "",
+                    "this.login();",
+                    "",
+                    "Ext.Viewport.setMasked(false);",
+                    "Ext.Viewport.setActiveItem(Ext.getCmp('login'));",
+                    "Ext.getStore('Runs').removeAll();",
+                    "",
+                    "this.logoutCmp.destroy();",
+                    ""
+                ]
+            }
+        }
+    ]
+}
