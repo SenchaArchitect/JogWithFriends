@@ -1,0 +1,219 @@
+{
+    "expandedState": {
+        "data": true,
+        "model": false,
+        "component": true,
+        "controller": true,
+        "resource": true,
+        "91cadc37-6bc9-409e-bdc7-69e74ad21eb2": {
+            "id": "ExtBox1-ext-gen17142",
+            "expanded": false,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen1729",
+                    "expanded": true,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen1730",
+                            "expanded": true
+                        }
+                    ]
+                },
+                {
+                    "id": "ExtBox1-ext-gen1731",
+                    "expanded": true,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen1732",
+                            "expanded": true
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen1733",
+                            "expanded": true
+                        }
+                    ]
+                },
+                {
+                    "id": "ExtBox1-ext-gen1734",
+                    "expanded": true
+                }
+            ]
+        },
+        "b4df8eeb-d7cc-48cb-8f70-143e6af15d4d": {
+            "id": "ExtBox1-ext-gen16003",
+            "expanded": false,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen1737",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen1738",
+                    "expanded": true
+                }
+            ]
+        },
+        "ef1a53a0-e694-4763-95f4-509b52a44176": {
+            "id": "ExtBox1-ext-gen13075",
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen1740",
+                    "expanded": true,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen1741",
+                            "expanded": true
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen1742",
+                            "expanded": true
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen1743",
+                            "expanded": true
+                        }
+                    ]
+                },
+                {
+                    "id": "ExtBox1-ext-gen1744",
+                    "expanded": true
+                }
+            ]
+        },
+        "e4143397-fa49-435c-9a23-245622917696": {
+            "id": "ExtBox1-ext-gen12459",
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen1748",
+                    "expanded": true
+                }
+            ]
+        },
+        "09d09013-3123-4817-9494-d896bf96a4a0": {
+            "id": "ExtBox1-ext-gen11730",
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen1750",
+                    "expanded": true,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen1751",
+                            "expanded": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "1a306d38-291b-4995-87e6-e2ed4ef639b3": {
+            "id": "ExtBox1-ext-gen5139",
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen1720",
+                    "expanded": true
+                }
+            ]
+        },
+        "482e4de5-3e2e-47bd-899e-ba353013ace1": {
+            "id": "ExtBox1-ext-gen3690",
+            "expanded": false,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen1709",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen1710",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen1711",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen1712",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen1713",
+                    "expanded": true
+                }
+            ]
+        },
+        "31edccfe-f052-46a8-8932-e461aae9c35b": {
+            "id": "ExtBox1-ext-gen5823",
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen1753",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen1754",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen1755",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen1756",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen1757",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen1758",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen1759",
+                    "expanded": true
+                }
+            ]
+        },
+        "92df9db1-05be-4d88-83f3-5dd835ab793f": {
+            "id": "ExtBox1-ext-gen8909",
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen1760",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen1761",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen1762",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen1763",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen1764",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen1765",
+                    "expanded": true
+                }
+            ]
+        },
+        "2ff46d81-88e0-4df1-a547-3275eb0735aa": {
+            "id": "ExtBox1-ext-gen2272",
+            "expanded": true
+        },
+        "281a8703-7989-41f1-91d6-a03aa3d1f13d": {
+            "id": "ExtBox1-ext-gen2067",
+            "expanded": true
+        }
+    }
+}

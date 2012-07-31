@@ -1,0 +1,29 @@
+{
+    "type": "store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Runs",
+        "model": "Run",
+        "storeId": "Runs"
+    },
+    "id": "ExtBox1-ext-gen5139",
+    "designerId": "1a306d38-291b-4995-87e6-e2ed4ef639b3",
+    "cn": [
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy2",
+                "url": "runs"
+            }
+        }
+    ]
+}

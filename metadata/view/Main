@@ -1,0 +1,99 @@
+{
+    "type": "container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main",
+        "layout": "card"
+    },
+    "id": "ExtBox1-ext-gen13075",
+    "designerId": "ef1a53a0-e694-4763-95f4-509b52a44176",
+    "cn": [
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyToolbar",
+                "cls": [
+                    "jogToolbar"
+                ],
+                "docked": "top",
+                "id": "mainToolbar"
+            },
+            "cn": [
+                {
+                    "type": "spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MySpacer"
+                    }
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyButton",
+                        "cls": "fbButton",
+                        "id": "showFormButton",
+                        "iconCls": "showFormBtn",
+                        "text": null
+                    }
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyButton1",
+                        "cls": "fbButton",
+                        "id": "signout",
+                        "iconCls": "signoutBtn",
+                        "text": null
+                    }
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "initialize",
+                "fn": "initialize",
+                "implHandler": [
+                    "this.callParent();",
+                    "",
+                    "// Enable the Tap event on the profile picture in the toolbar, so we can show a logout button",
+                    "var meta = Ext.getCmp('signout');",
+                    "if (meta) {",
+                    "    meta.element.on('tap', function(e) {",
+                    "        meta.fireEvent('tap', meta, e);",
+                    "    });",
+                    "}",
+                    ""
+                ]
+            }
+        }
+    ]
+}

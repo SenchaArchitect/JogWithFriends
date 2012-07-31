@@ -1,0 +1,178 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Runs"
+    },
+    "id": "ExtBox1-ext-gen8909",
+    "designerId": "92df9db1-05be-4d88-83f3-5dd835ab793f",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "addRun",
+                "fn": "addRun",
+                "implHandler": [
+                    "var distance = Ext.getCmp('distanceField').getValue(),",
+                    "    location = Ext.getCmp('locationField').getValue(),",
+                    "    caption = JWF.userData.first_name + ' ran ' + distance + ' miles';",
+                    "",
+                    "if (location) {",
+                    "    caption += ' in ' + location;",
+                    "}",
+                    "",
+                    "Ext.getCmp('runForm').setMasked({",
+                    "    xtype: 'loadmask',",
+                    "    message: 'Adding New Jog...'",
+                    "});",
+                    "",
+                    "Ext.Ajax.request({",
+                    "    url: '/run',",
+                    "    method: 'POST',",
+                    "    params: {",
+                    "        location: location,",
+                    "        distance: distance",
+                    "    },",
+                    "    callback: this.onAddRun,",
+                    "    scope: this",
+                    "});"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#addRunButton"
+            }
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "showForm",
+                "fn": "showForm",
+                "implHandler": [
+                    "if (!this.addRunForm) {",
+                    "    this.addRunForm = Ext.create('JWF.view.Form', {",
+                    "        id: 'runForm'",
+                    "    });",
+                    "}",
+                    "Ext.Viewport.setActiveItem(this.addRunForm);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#showFormButton"
+            }
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "hideForm",
+                "fn": "hideForm",
+                "implHandler": [
+                    "Ext.Viewport.setActiveItem(Ext.getCmp('main'));",
+                    "Ext.getCmp('runForm').hide();"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#addRunBackBtn"
+            }
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "init",
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    "this.callParent();",
+                    "",
+                    "Ext.getStore('Runs').on('load', this.onRunsLoad);",
+                    ""
+                ]
+            },
+            "iconCls": "icon-init-function"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onRunsLoad",
+                "fn": "onRunsLoad",
+                "designer|params": [
+                    "store"
+                ],
+                "implHandler": [
+                    "var main = Ext.getCmp('main'),",
+                    "    runList = Ext.getCmp('runList'),",
+                    "    noFriends = Ext.getCmp('noFriends');",
+                    "",
+                    "if (store.getCount()) {",
+                    "    if (!runList) {",
+                    "        runList = Ext.create('JWF.view.run.List', {",
+                    "            id: 'runList'",
+                    "        });",
+                    "    }",
+                    "    main.setActiveItem(runList);",
+                    "} else {",
+                    "    if (!noFriends) {",
+                    "        noFriends = Ext.create('JWF.view.NoFriends', {",
+                    "            id: 'noFriends',",
+                    "            data: JWF.userData",
+                    "        });",
+                    "    }",
+                    "    main.setActiveItem(noFriends);",
+                    "}"
+                ]
+            }
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onAddRun",
+                "fn": "onAddRun",
+                "designer|params": [
+                    "options",
+                    "success",
+                    "response"
+                ],
+                "implHandler": [
+                    "Ext.getCmp('runForm').setMasked(false);",
+                    "this.hideForm();",
+                    "Ext.getStore('Runs').load();"
+                ]
+            }
+        }
+    ]
+}

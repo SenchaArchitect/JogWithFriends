@@ -1,0 +1,81 @@
+{
+    "projectName": "Project Name",
+    "licenseText": "Copyright(c) 2011 Company Name",
+    "builds": [
+        {
+            "name": "All Classes",
+            "target": "all-classes.js",
+            "options": {
+                "debug": true
+            },
+            "files": [
+                {
+                    "path": "app/view/run/",
+                    "name": "List.js",
+                    "clsName": "JWF.view.run.List"
+                },
+                {
+                    "path": "app/view/override/run/",
+                    "name": "List.js",
+                    "clsName": "JWF.view.override.run.List"
+                },
+                {
+                    "path": "app/model/",
+                    "name": "Run.js",
+                    "clsName": "JWF.model.Run"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "NoFriends.js",
+                    "clsName": "JWF.view.NoFriends"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "Main.js",
+                    "clsName": "JWF.view.Main"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "Login.js",
+                    "clsName": "JWF.view.Login"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "Form.js",
+                    "clsName": "JWF.view.Form"
+                },
+                {
+                    "path": "app/controller/",
+                    "name": "Facebook.js",
+                    "clsName": "JWF.controller.Facebook"
+                },
+                {
+                    "path": "app/controller/",
+                    "name": "Runs.js",
+                    "clsName": "JWF.controller.Runs"
+                },
+                {
+                    "path": "app/store/",
+                    "name": "Runs.js",
+                    "clsName": "JWF.store.Runs"
+                }
+            ]
+        },
+        {
+            "name": "Application - Production",
+            "target": "app-all.js",
+            "compress": true,
+            "files": [
+                {
+                    "path": "",
+                    "name": "all-classes.js"
+                },
+                {
+                    "path": "",
+                    "name": "app.js"
+                }
+            ]
+        }
+    ],
+    "resources": []
+}

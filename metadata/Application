@@ -1,0 +1,89 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Run"
+        ],
+        "stores": [
+            "Runs"
+        ],
+        "views": [
+            "run.List",
+            "NoFriends",
+            "Main",
+            "Login",
+            "Form"
+        ],
+        "icon": "{\"57\":\"resources/icons/icon.png\",\"114\":\"resources/icons/icon.png\"}",
+        "name": "JWF",
+        "startupImage": "{\"320x460\":\"resources/images/phone_startup.png\"}",
+        "controllers": [
+            "Facebook",
+            "Runs"
+        ]
+    },
+    "id": "ExtBox1-ext-gen2019",
+    "designerId": "application",
+    "iconCls": "icon-application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "launch",
+                "fn": "launch",
+                "implHandler": [
+                    "this.facebookAppId = '';",
+                    "",
+                    "if (this.facebookAppId === '') {",
+                    "    Ext.create('Ext.Component', {",
+                    "        fullscreen: true,",
+                    "        padding: 20,",
+                    "        html: [",
+                    "        '<p>Please read the readme to set up this example locally.</p><br/>',",
+                    "        '<p>For a live example, visit <a href=\"http://ju.mp/senchajwf\">http://ju.mp/senchajwf</a></p>'",
+                    "        ].join('')",
+                    "    });",
+                    "}"
+                ]
+            },
+            "iconCls": "icon-launch-function"
+        },
+        {
+            "type": "viewport",
+            "reference": {
+                "name": "viewport",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "Viewport",
+                "autoMaximize": true
+            },
+            "iconCls": "icon-viewport"
+        },
+        {
+            "type": "loader",
+            "reference": {
+                "name": "loader",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "Loader",
+                "enabled": true,
+                "paths": "{\n    JWF: '/resources/js'\n}"
+            },
+            "iconCls": "icon-loader"
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "type": "container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Login",
+        "padding": 20,
+        "layout": "fit"
+    },
+    "id": "ExtBox1-ext-gen16003",
+    "designerId": "b4df8eeb-d7cc-48cb-8f70-143e6af15d4d",
+    "cn": [
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyToolbar1",
+                "cls": [
+                    "jogToolbar"
+                ],
+                "docked": "top"
+            }
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "showLoginText",
+                "fn": "showLoginText",
+                "implHandler": [
+                    "var redirectUrl = Ext.Object.toQueryString({",
+                    "    redirect_uri: window.location.protocol + \"//\" + window.location.host + window.location.pathname,",
+                    "    client_id: JWF.app.facebookAppId,",
+                    "    response_type: 'token'",
+                    "});",
+                    "",
+                    "this.setHtml([",
+                    "    '<h2>Welcome to Jog with Friends</h2>',",
+                    "    '<p>With this app you can log your runs and share your progress with your friends</p>',",
+                    "    '<p>In order to use Jog with Friends you must sign in with your Facebook account.</p>',",
+                    "    '<a class=\"fbLogin\" href=\"https://m.facebook.com/dialog/oauth?' + redirectUrl + '\"></a>',",
+                    "    '<div class=\"fb-facepile\" data-app-id=\"' + JWF.app.facebookAppId + '\" data-max-rows=\"2\" data-width=\"300\"></div>'",
+                    "].join(''));",
+                    "",
+                    " FB.XFBML.parse(document.getElementById('splash'));"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "type": "container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "NoFriends",
+        "cls": [
+            "noFriends"
+        ]
+    },
+    "id": "ExtBox1-ext-gen12459",
+    "designerId": "e4143397-fa49-435c-9a23-245622917696",
+    "cn": [
+        {
+            "type": "template",
+            "reference": {
+                "name": "tpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "tpl",
+                "implHandler": [
+                    "<div class=\"welcomeNoFriends\">",
+                    "<img src=\"https://graph.facebook.com/{id}/picture?type=square\" />",
+                    "Welcome to Jog with Friends, <b>{first_name}</b>!",
+                    "</div>"
+                ],
+                "designer|displayName": "tpl"
+            }
+        }
+    ]
+}
