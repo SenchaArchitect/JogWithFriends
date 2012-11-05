@@ -19,9 +19,13 @@
             "Login",
             "Form"
         ],
-        "icon": "{\"57\":\"resources/icons/icon.png\",\"114\":\"resources/icons/icon.png\"}",
+        "icon": [
+            "{\"57\":\"resources/icons/icon.png\",\"114\":\"resources/icons/icon.png\"}"
+        ],
         "name": "JWF",
-        "startupImage": "{\"320x460\":\"resources/images/phone_startup.png\"}",
+        "startupImage": [
+            "{\"320x460\":\"resources/images/phone_startup.png\"}"
+        ],
         "controllers": [
             "Facebook",
             "Runs"
@@ -29,7 +33,6 @@
     },
     "id": "ExtBox1-ext-gen2019",
     "designerId": "application",
-    "iconCls": "icon-application",
     "cn": [
         {
             "type": "fixedfunction",
@@ -56,7 +59,7 @@
                     "}"
                 ]
             },
-            "iconCls": "icon-launch-function"
+            "designerId": "5e30f45a-f6db-490b-8654-a68d9689909a"
         },
         {
             "type": "viewport",
@@ -69,7 +72,7 @@
                 "designer|userClassName": "Viewport",
                 "autoMaximize": true
             },
-            "iconCls": "icon-viewport"
+            "designerId": "0a7c75cd-f3da-4b72-8515-ff613a263e32"
         },
         {
             "type": "loader",
@@ -81,9 +84,13 @@
             "userConfig": {
                 "designer|userClassName": "Loader",
                 "enabled": true,
-                "paths": "{\n    JWF: '/resources/js'\n}"
+                "paths": [
+                    "{",
+                    "    JWF: '/resources/js'",
+                    "}"
+                ]
             },
-            "iconCls": "icon-loader"
+            "designerId": "5923b9b0-6a31-4c0c-87a0-b09d3310bbdd"
         }
     ]
 }
