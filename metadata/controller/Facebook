@@ -37,7 +37,7 @@
                     ""
                 ]
             },
-            "iconCls": "icon-init-function"
+            "designerId": "b44e02f3-a1f6-44f3-8ee6-d4c00b8fe68f"
         },
         {
             "type": "controlleraction",
@@ -75,7 +75,8 @@
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
                 "designer|controlQuery": "#signout"
-            }
+            },
+            "designerId": "cf61d4f4-76ac-4df9-8327-62850104ff5e"
         },
         {
             "type": "basicfunction",
@@ -133,7 +134,8 @@
                     "}, 10000);",
                     ""
                 ]
-            }
+            },
+            "designerId": "90c70142-971f-4323-838b-d5e9e6640d10"
         },
         {
             "type": "basicfunction",
@@ -153,7 +155,8 @@
                     "}",
                     "Ext.getCmp('login').showLoginText();"
                 ]
-            }
+            },
+            "designerId": "2e5b42bb-9f5e-4392-8b75-b79fc73d8a66"
         },
         {
             "type": "basicfunction",
@@ -190,7 +193,8 @@
                     "    }",
                     "});"
                 ]
-            }
+            },
+            "designerId": "b1d17da5-10be-47de-8176-f0d9e02344fa"
         },
         {
             "type": "controlleraction",
@@ -209,7 +213,8 @@
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
                 "designer|controlQuery": "#logoutButton"
-            }
+            },
+            "designerId": "79961892-c15a-41cf-a30c-8d45465dd975"
         },
         {
             "type": "basicfunction",
@@ -233,7 +238,8 @@
                     "this.logoutCmp.destroy();",
                     ""
                 ]
-            }
+            },
+            "designerId": "f161fb55-ea89-467f-b674-0cfca49f1623"
         }
     ]
 }

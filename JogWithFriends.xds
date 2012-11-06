@@ -4,6 +4,7 @@
         "urlPrefix": "",
         "spacesToIndent": 4,
         "exportPath": "",
+        "sdkPath": "",
         "lineEnding": "LF",
         "genTimestamps": false,
         "cacheBust": false,
@@ -14,11 +15,11 @@
         "saveOnDeploy": false,
         "appName": "MyApp"
     },
-    "xdsVersion": "2.0.0",
-    "xdsBuild": 550,
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 670,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000495,
-    "framework": "touch20",
+    "upgradeVersion": 210000000498,
+    "framework": "touch21",
     "topInstanceFileMap": {
         "281a8703-7989-41f1-91d6-a03aa3d1f13d": {
             "paths": [

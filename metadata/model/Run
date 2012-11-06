@@ -21,7 +21,8 @@
             "userConfig": {
                 "designer|userClassName": "MyField",
                 "name": "location"
-            }
+            },
+            "designerId": "827e6499-7296-4245-89be-e3e38e623731"
         },
         {
             "type": "datafield",
@@ -34,7 +35,8 @@
                 "designer|userClassName": "MyField1",
                 "name": "date",
                 "type": "date"
-            }
+            },
+            "designerId": "f63332ef-f68f-4747-89a4-1b8424d6a3b6"
         },
         {
             "type": "datafield",
@@ -47,7 +49,8 @@
                 "designer|userClassName": "MyField2",
                 "name": "distance",
                 "type": "int"
-            }
+            },
+            "designerId": "62595165-32b4-4ce9-98d9-413b22d73d9e"
         },
         {
             "type": "datafield",
@@ -59,7 +62,8 @@
             "userConfig": {
                 "designer|userClassName": "MyField3",
                 "name": "profileId"
-            }
+            },
+            "designerId": "919e33e9-4e70-4420-a786-32a28a4211f8"
         },
         {
             "type": "datafield",
@@ -71,7 +75,8 @@
             "userConfig": {
                 "designer|userClassName": "MyField4",
                 "name": "name"
-            }
+            },
+            "designerId": "4aec4a1b-8817-4003-9797-68976af7332d"
         }
     ]
 }

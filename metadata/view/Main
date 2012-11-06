@@ -27,6 +27,7 @@
                 "docked": "top",
                 "id": "mainToolbar"
             },
+            "designerId": "858f205e-7ac0-4ec0-b3b3-32457714756f",
             "cn": [
                 {
                     "type": "spacer",
@@ -37,7 +38,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MySpacer"
-                    }
+                    },
+                    "designerId": "52f9b38b-8091-41e8-9285-d7318f413f78"
                 },
                 {
                     "type": "button",
@@ -52,7 +54,8 @@
                         "id": "showFormButton",
                         "iconCls": "showFormBtn",
                         "text": null
-                    }
+                    },
+                    "designerId": "1ac9a0d7-fc07-42d1-975b-0e41d743d9d0"
                 },
                 {
                     "type": "button",
@@ -67,7 +70,8 @@
                         "id": "signout",
                         "iconCls": "signoutBtn",
                         "text": null
-                    }
+                    },
+                    "designerId": "3b1b6f42-53c0-4dc4-9ace-345e7c0e5836"
                 }
             ]
         },
@@ -93,7 +97,8 @@
                     "}",
                     ""
                 ]
-            }
+            },
+            "designerId": "1d3ce947-b723-4108-88fd-684778fa381f"
         }
     ]
 }

@@ -25,6 +25,7 @@
                 "docked": "top",
                 "title": "New Jog"
             },
+            "designerId": "55341736-4df3-487c-8629-e17601c23fba",
             "cn": [
                 {
                     "type": "button",
@@ -38,7 +39,8 @@
                         "id": "addRunBackBtn",
                         "ui": "back",
                         "text": "Back"
-                    }
+                    },
+                    "designerId": "8f171e88-ed2b-4c73-9863-167bb140f310"
                 }
             ]
         },
@@ -53,6 +55,7 @@
                 "designer|userClassName": "MyFieldSet",
                 "title": null
             },
+            "designerId": "fa6e0621-15d6-4613-9f32-2afbe15d00d1",
             "cn": [
                 {
                     "type": "textfield",
@@ -66,7 +69,8 @@
                         "id": "locationField",
                         "label": null,
                         "placeHolder": "Where?"
-                    }
+                    },
+                    "designerId": "a1ed0b11-b0de-4d07-b58b-85e2bcb3e5dc"
                 },
                 {
                     "type": "textfield",
@@ -80,7 +84,8 @@
                         "id": "distanceField",
                         "label": null,
                         "placeHolder": "How Many Miles?"
-                    }
+                    },
+                    "designerId": "dcb98d3b-43e3-4d28-97c0-bb9b5e9ba425"
                 }
             ]
         },
@@ -96,7 +101,8 @@
                 "id": "addRunButton",
                 "ui": "facebook",
                 "text": "Add Jog"
-            }
+            },
+            "designerId": "acb3d3a5-d22d-449d-a309-c63a13913ba2"
         }
     ]
 }

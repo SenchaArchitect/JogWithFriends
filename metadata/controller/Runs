@@ -49,7 +49,8 @@
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
                 "designer|controlQuery": "#addRunButton"
-            }
+            },
+            "designerId": "b63bfcf5-d270-4300-a7e1-20767c55577f"
         },
         {
             "type": "controlleraction",
@@ -72,7 +73,8 @@
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
                 "designer|controlQuery": "#showFormButton"
-            }
+            },
+            "designerId": "e52a5905-890b-4089-bfcd-bbc792a9bec8"
         },
         {
             "type": "controlleraction",
@@ -91,7 +93,8 @@
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
                 "designer|controlQuery": "#addRunBackBtn"
-            }
+            },
+            "designerId": "d1a23272-fc54-46df-a6e7-32de24a50fee"
         },
         {
             "type": "fixedfunction",
@@ -113,7 +116,7 @@
                     ""
                 ]
             },
-            "iconCls": "icon-init-function"
+            "designerId": "13ad07c7-9fed-44f2-aa85-75e1454ba51c"
         },
         {
             "type": "basicfunction",
@@ -150,7 +153,8 @@
                     "    main.setActiveItem(noFriends);",
                     "}"
                 ]
-            }
+            },
+            "designerId": "94bfd6c0-0b92-47f8-9560-b30458701c47"
         },
         {
             "type": "basicfunction",
@@ -172,7 +176,8 @@
                     "this.hideForm();",
                     "Ext.getStore('Runs').load();"
                 ]
-            }
+            },
+            "designerId": "158117ca-69bc-44f1-8206-d5f890452ff1"
         }
     ]
 }

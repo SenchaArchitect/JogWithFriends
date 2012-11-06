@@ -26,7 +26,8 @@
                     "jogToolbar"
                 ],
                 "docked": "top"
-            }
+            },
+            "designerId": "548aeeef-2dd8-4e56-b0d4-ef527b9352ae"
         },
         {
             "type": "basicfunction",
@@ -55,7 +56,8 @@
                     "",
                     " FB.XFBML.parse(document.getElementById('splash'));"
                 ]
-            }
+            },
+            "designerId": "6f1847f5-1beb-4a63-8783-29c514ee53f5"
         }
     ]
 }

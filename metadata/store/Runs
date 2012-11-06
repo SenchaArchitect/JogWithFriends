@@ -23,7 +23,8 @@
             "userConfig": {
                 "designer|userClassName": "MyAjaxProxy2",
                 "url": "runs"
-            }
+            },
+            "designerId": "7bedae11-f531-4f97-af31-db3268a6fd7b"
         }
     ]
 }

@@ -33,6 +33,7 @@
                 ],
                 "designer|displayName": "itemTpl"
             },
+            "designerId": "4cfcb99e-75d4-47a7-9f80-13d9b74fc559",
             "cn": [
                 {
                     "type": "templatefunction",
@@ -69,7 +70,7 @@
                             "}"
                         ]
                     },
-                    "iconCls": "icon-basic-function"
+                    "designerId": "5fa2ff5c-298f-436a-9df4-434426f9ba2d"
                 }
             ]
         }
