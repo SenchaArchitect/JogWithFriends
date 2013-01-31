@@ -5,7 +5,7 @@ A Sencha Touch 2 built with Sencha Architect that allows you to share jogging ev
 
 Original author - Nick Poulden
 
-[JogWithFriends670.xda (build: 670)](https://github.com/downloads/SenchaArchitect/JogWithFriends/JogWithFriends670.xda) - Architect archive
+[JogWithFriends670.xda (build: 670)](http://cdn.sencha.com/architect/examples/jogwithfriends/JogWithFriends670.xda) - Architect archive
 
 Features:
 - Templates/Template Functions
