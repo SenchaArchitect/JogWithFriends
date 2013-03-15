@@ -1,20 +1,19 @@
 {
-    "type": "store",
+    "type": "Ext.data.Store",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Runs",
         "model": "Run",
-        "storeId": "Runs"
+        "storeId": "Runs",
+        "designer|userClassName": "Runs"
     },
-    "id": "ExtBox1-ext-gen5139",
     "designerId": "1a306d38-291b-4995-87e6-e2ed4ef639b3",
     "cn": [
         {
-            "type": "ajaxproxy",
+            "type": "Ext.data.proxy.Ajax",
             "reference": {
                 "name": "proxy",
                 "type": "object"

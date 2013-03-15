@@ -15,15 +15,19 @@ var graph = require('fbgraph'),
 var config = {
 
     // Base URL of the App (must be a publically accessible URL)
+    // example: http://warm-savannah-5555.herokuapp.com/
     redirect_uri:  '',
 
     // Facebook Application ID
+    // example: 123456781234567
     client_id:     '',
 
     // Facebook Application Secret
+    // example: 709342777777e972376092a4234235555
     client_secret: '',
 
     // MongoDB endpoint
+    // example: mongodb://user:password@ds555555.mongolab.com:31867/jwf
     mongoDb:       '',
 
     // Session encyption key

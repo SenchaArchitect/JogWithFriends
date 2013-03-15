@@ -7,6 +7,7 @@ cp -r resources server-side/public
 mkdir -p server-side/public/resources/js
 
 cp -r app/* server-side/public/resources/js
+cp index.html server-side/public/index.html
 cp app.js server-side/public/resources/js/app.js
 
 echo "Done!"

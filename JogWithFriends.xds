@@ -13,20 +13,15 @@
         "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
         "instantiateStore": true,
         "saveOnDeploy": false,
-        "appName": "MyApp"
+        "appName": "MyApp",
+        "buildShouldOverwriteIndex": true
     },
-    "xdsVersion": "2.1.0",
-    "xdsBuild": 670,
+    "xdsVersion": "2.2.0",
+    "xdsBuild": 894,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000498,
+    "upgradeVersion": 210000000499,
     "framework": "touch21",
     "topInstanceFileMap": {
-        "281a8703-7989-41f1-91d6-a03aa3d1f13d": {
-            "paths": [
-                "metadata/resource/css"
-            ],
-            "className": "css"
-        },
         "482e4de5-3e2e-47bd-899e-ba353013ace1": {
             "paths": [
                 "metadata/model/Run",
@@ -104,6 +99,12 @@
                 "metadata/resource/Library"
             ],
             "className": "Library"
+        },
+        "d5acbb29-b98c-4462-a6e2-1d904a051510": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
         }
     },
     "viewOrderMap": {
@@ -126,7 +127,7 @@
         ],
         "resource": [
             "2ff46d81-88e0-4df1-a547-3275eb0735aa",
-            "281a8703-7989-41f1-91d6-a03aa3d1f13d"
+            "d5acbb29-b98c-4462-a6e2-1d904a051510"
         ],
         "app": [
             "application"

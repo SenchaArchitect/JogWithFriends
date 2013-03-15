@@ -1,5 +1,5 @@
 {
-    "type": "application",
+    "type": "Ext.app.Application",
     "reference": {
         "name": "items",
         "type": "array"
@@ -19,19 +19,18 @@
             "Login",
             "Form"
         ],
+        "controllers": [
+            "Facebook",
+            "Runs"
+        ],
         "icon": [
             "{\"57\":\"resources/icons/icon.png\",\"114\":\"resources/icons/icon.png\"}"
         ],
         "name": "JWF",
         "startupImage": [
             "{\"320x460\":\"resources/images/phone_startup.png\"}"
-        ],
-        "controllers": [
-            "Facebook",
-            "Runs"
         ]
     },
-    "id": "ExtBox1-ext-gen2019",
     "designerId": "application",
     "cn": [
         {
@@ -62,7 +61,7 @@
             "designerId": "5e30f45a-f6db-490b-8654-a68d9689909a"
         },
         {
-            "type": "viewport",
+            "type": "Ext.Viewport",
             "reference": {
                 "name": "viewport",
                 "type": "object"
@@ -75,20 +74,19 @@
             "designerId": "0a7c75cd-f3da-4b72-8515-ff613a263e32"
         },
         {
-            "type": "loader",
+            "type": "Ext.Loader",
             "reference": {
                 "name": "loader",
                 "type": "object"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "Loader",
-                "enabled": true,
                 "paths": [
                     "{",
                     "    JWF: '/resources/js'",
                     "}"
-                ]
+                ],
+                "designer|userClassName": "Loader"
             },
             "designerId": "5923b9b0-6a31-4c0c-87a0-b09d3310bbdd"
         }

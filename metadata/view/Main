@@ -1,5 +1,5 @@
 {
-    "type": "container",
+    "type": "Ext.Container",
     "reference": {
         "name": "items",
         "type": "array"
@@ -9,65 +9,59 @@
         "designer|userClassName": "Main",
         "layout": "card"
     },
-    "id": "ExtBox1-ext-gen13075",
     "designerId": "ef1a53a0-e694-4763-95f4-509b52a44176",
     "cn": [
         {
-            "type": "toolbar",
+            "type": "Ext.Toolbar",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyToolbar",
+                "container|pack": "end",
                 "cls": [
                     "jogToolbar"
                 ],
                 "docked": "top",
-                "id": "mainToolbar"
+                "id": "mainToolbar",
+                "designer|userClassName": "MyToolbar"
             },
             "designerId": "858f205e-7ac0-4ec0-b3b3-32457714756f",
             "cn": [
                 {
-                    "type": "spacer",
+                    "type": "Ext.Button",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MySpacer"
-                    },
-                    "designerId": "52f9b38b-8091-41e8-9285-d7318f413f78"
-                },
-                {
-                    "type": "button",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyButton",
-                        "cls": "fbButton",
+                        "cls": [
+                            "fbButton"
+                        ],
+                        "hidden": null,
                         "id": "showFormButton",
+                        "designer|userClassName": "MyButton",
                         "iconCls": "showFormBtn",
                         "text": null
                     },
                     "designerId": "1ac9a0d7-fc07-42d1-975b-0e41d743d9d0"
                 },
                 {
-                    "type": "button",
+                    "type": "Ext.Button",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyButton1",
-                        "cls": "fbButton",
+                        "cls": [
+                            "fbButton"
+                        ],
+                        "hidden": null,
                         "id": "signout",
+                        "designer|userClassName": "MyButton1",
                         "iconCls": "signoutBtn",
                         "text": null
                     },
