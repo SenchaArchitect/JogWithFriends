@@ -1,21 +1,20 @@
 {
-    "type": "container",
+    "type": "Ext.Container",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "NoFriends",
         "cls": [
             "noFriends"
-        ]
+        ],
+        "designer|userClassName": "NoFriends"
     },
-    "id": "ExtBox1-ext-gen12459",
     "designerId": "e4143397-fa49-435c-9a23-245622917696",
     "cn": [
         {
-            "type": "template",
+            "type": "Ext.XTemplate",
             "reference": {
                 "name": "tpl",
                 "type": "object"

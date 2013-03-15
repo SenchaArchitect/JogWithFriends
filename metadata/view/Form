@@ -1,43 +1,42 @@
 {
-    "type": "panel",
+    "type": "Ext.Panel",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Form",
         "padding": "15 15 15 15",
+        "designer|userClassName": "Form",
         "scrollable": false
     },
-    "id": "ExtBox1-ext-gen17142",
     "designerId": "91cadc37-6bc9-409e-bdc7-69e74ad21eb2",
     "cn": [
         {
-            "type": "toolbar",
+            "type": "Ext.Toolbar",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyToolbar2",
                 "docked": "top",
+                "designer|userClassName": "MyToolbar2",
                 "title": "New Jog"
             },
             "designerId": "55341736-4df3-487c-8629-e17601c23fba",
             "cn": [
                 {
-                    "type": "button",
+                    "type": "Ext.Button",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyButton2",
                         "id": "addRunBackBtn",
                         "ui": "back",
+                        "designer|userClassName": "MyButton2",
                         "text": "Back"
                     },
                     "designerId": "8f171e88-ed2b-4c73-9863-167bb140f310"
@@ -45,7 +44,7 @@
             ]
         },
         {
-            "type": "fieldset",
+            "type": "Ext.form.FieldSet",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -58,30 +57,30 @@
             "designerId": "fa6e0621-15d6-4613-9f32-2afbe15d00d1",
             "cn": [
                 {
-                    "type": "textfield",
+                    "type": "Ext.field.Text",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyTextField",
                         "id": "locationField",
+                        "designer|userClassName": "MyTextField",
                         "label": null,
                         "placeHolder": "Where?"
                     },
                     "designerId": "a1ed0b11-b0de-4d07-b58b-85e2bcb3e5dc"
                 },
                 {
-                    "type": "textfield",
+                    "type": "Ext.field.Text",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyTextField1",
                         "id": "distanceField",
+                        "designer|userClassName": "MyTextField1",
                         "label": null,
                         "placeHolder": "How Many Miles?"
                     },
@@ -90,16 +89,16 @@
             ]
         },
         {
-            "type": "button",
+            "type": "Ext.Button",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyButton3",
                 "id": "addRunButton",
                 "ui": "facebook",
+                "designer|userClassName": "MyButton3",
                 "text": "Add Jog"
             },
             "designerId": "acb3d3a5-d22d-449d-a309-c63a13913ba2"

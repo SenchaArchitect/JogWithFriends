@@ -1,31 +1,30 @@
 {
-    "type": "container",
+    "type": "Ext.Container",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Login",
         "padding": 20,
+        "designer|userClassName": "Login",
         "layout": "fit"
     },
-    "id": "ExtBox1-ext-gen16003",
     "designerId": "b4df8eeb-d7cc-48cb-8f70-143e6af15d4d",
     "cn": [
         {
-            "type": "toolbar",
+            "type": "Ext.Toolbar",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyToolbar1",
                 "cls": [
                     "jogToolbar"
                 ],
-                "docked": "top"
+                "docked": "top",
+                "designer|userClassName": "MyToolbar1"
             },
             "designerId": "548aeeef-2dd8-4e56-b0d4-ef527b9352ae"
         },

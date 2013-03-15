@@ -1,5 +1,5 @@
 {
-    "type": "list",
+    "type": "Ext.dataview.List",
     "reference": {
         "name": "items",
         "type": "array"
@@ -7,15 +7,14 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "run.List",
+        "disableSelection": true,
         "emptyText": "Add some Runs, then invite your friends!",
-        "store": "Runs",
-        "disableSelection": true
+        "store": "Runs"
     },
-    "id": "ExtBox1-ext-gen11730",
     "designerId": "09d09013-3123-4817-9494-d896bf96a4a0",
     "cn": [
         {
-            "type": "template",
+            "type": "Ext.XTemplate",
             "reference": {
                 "name": "itemTpl",
                 "type": "object"
