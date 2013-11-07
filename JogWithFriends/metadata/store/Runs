@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "Runs",
         "model": "Run",
-        "storeId": "Runs",
-        "designer|userClassName": "Runs"
+        "storeId": "Runs"
     },
     "designerId": "1a306d38-291b-4995-87e6-e2ed4ef639b3",
     "cn": [
@@ -20,7 +20,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyAjaxProxy2",
                 "url": "runs"
             },
             "designerId": "7bedae11-f531-4f97-af31-db3268a6fd7b"

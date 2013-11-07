@@ -6,8 +6,19 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "Facebook",
+            "Runs"
+        ],
+        "icon": [
+            "{\"57\":\"resources/icons/icon.png\",\"114\":\"resources/icons/icon.png\"}"
+        ],
         "models": [
             "Run"
+        ],
+        "name": "JWF",
+        "startupImage": [
+            "{\"320x460\":\"resources/images/phone_startup.png\"}"
         ],
         "stores": [
             "Runs"
@@ -18,17 +29,6 @@
             "Main",
             "Login",
             "Form"
-        ],
-        "controllers": [
-            "Facebook",
-            "Runs"
-        ],
-        "icon": [
-            "{\"57\":\"resources/icons/icon.png\",\"114\":\"resources/icons/icon.png\"}"
-        ],
-        "name": "JWF",
-        "startupImage": [
-            "{\"320x460\":\"resources/images/phone_startup.png\"}"
         ]
     },
     "designerId": "application",
@@ -41,7 +41,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "launch",
                 "fn": "launch",
                 "implHandler": [
                     "this.facebookAppId = '';",
@@ -68,7 +67,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "Viewport",
                 "autoMaximize": true
             },
             "designerId": "0a7c75cd-f3da-4b72-8515-ff613a263e32"
@@ -85,8 +83,7 @@
                     "{",
                     "    JWF: '/resources/js'",
                     "}"
-                ],
-                "designer|userClassName": "Loader"
+                ]
             },
             "designerId": "5923b9b0-6a31-4c0c-87a0-b09d3310bbdd"
         }

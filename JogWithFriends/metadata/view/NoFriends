@@ -21,14 +21,13 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "tpl",
+                "designer|displayName": "tpl",
                 "implHandler": [
                     "<div class=\"welcomeNoFriends\">",
                     "<img src=\"https://graph.facebook.com/{id}/picture?type=square\" />",
                     "Welcome to Jog with Friends, <b>{first_name}</b>!",
                     "</div>"
-                ],
-                "designer|displayName": "tpl"
+                ]
             },
             "designerId": "d294163f-6c25-4b85-b78c-3ee28bbea383"
         }

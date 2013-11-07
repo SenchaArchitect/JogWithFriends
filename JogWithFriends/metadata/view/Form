@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "padding": "15 15 15 15",
         "designer|userClassName": "Form",
+        "padding": "15 15 15 15",
         "scrollable": false
     },
     "designerId": "91cadc37-6bc9-409e-bdc7-69e74ad21eb2",
@@ -21,7 +21,6 @@
             "codeClass": null,
             "userConfig": {
                 "docked": "top",
-                "designer|userClassName": "MyToolbar2",
                 "title": "New Jog"
             },
             "designerId": "55341736-4df3-487c-8629-e17601c23fba",
@@ -35,9 +34,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "addRunBackBtn",
-                        "ui": "back",
-                        "designer|userClassName": "MyButton2",
-                        "text": "Back"
+                        "text": "Back",
+                        "ui": "back"
                     },
                     "designerId": "8f171e88-ed2b-4c73-9863-167bb140f310"
                 }
@@ -51,7 +49,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyFieldSet",
                 "title": null
             },
             "designerId": "fa6e0621-15d6-4613-9f32-2afbe15d00d1",
@@ -65,7 +62,6 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "locationField",
-                        "designer|userClassName": "MyTextField",
                         "label": null,
                         "placeHolder": "Where?"
                     },
@@ -80,7 +76,6 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "distanceField",
-                        "designer|userClassName": "MyTextField1",
                         "label": null,
                         "placeHolder": "How Many Miles?"
                     },
@@ -97,9 +92,8 @@
             "codeClass": null,
             "userConfig": {
                 "id": "addRunButton",
-                "ui": "facebook",
-                "designer|userClassName": "MyButton3",
-                "text": "Add Jog"
+                "text": "Add Jog",
+                "ui": "facebook"
             },
             "designerId": "acb3d3a5-d22d-449d-a309-c63a13913ba2"
         }
