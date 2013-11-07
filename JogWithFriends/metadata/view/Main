@@ -19,13 +19,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "container|pack": "end",
                 "cls": [
                     "jogToolbar"
                 ],
+                "container|pack": "end",
                 "docked": "top",
-                "id": "mainToolbar",
-                "designer|userClassName": "MyToolbar"
+                "id": "mainToolbar"
             },
             "designerId": "858f205e-7ac0-4ec0-b3b3-32457714756f",
             "cn": [
@@ -41,9 +40,8 @@
                             "fbButton"
                         ],
                         "hidden": null,
-                        "id": "showFormButton",
-                        "designer|userClassName": "MyButton",
                         "iconCls": "showFormBtn",
+                        "id": "showFormButton",
                         "text": null
                     },
                     "designerId": "1ac9a0d7-fc07-42d1-975b-0e41d743d9d0"
@@ -60,9 +58,8 @@
                             "fbButton"
                         ],
                         "hidden": null,
-                        "id": "signout",
-                        "designer|userClassName": "MyButton1",
                         "iconCls": "signoutBtn",
+                        "id": "signout",
                         "text": null
                     },
                     "designerId": "3b1b6f42-53c0-4dc4-9ace-345e7c0e5836"
@@ -77,7 +74,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "initialize",
                 "fn": "initialize",
                 "implHandler": [
                     "this.callParent();",

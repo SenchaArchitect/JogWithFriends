@@ -21,7 +21,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "itemTpl",
+                "designer|displayName": "itemTpl",
                 "implHandler": [
                     "<div class=\"run\">",
                     "    <img src=\"https://graph.facebook.com/{profileId}/picture?type=square\" />",
@@ -29,8 +29,7 @@
                     "    <div class=\"location\">{location}</div>",
                     "    <div class=\"time\">{[this.timeAgoInWords(values.date)]}</div>",
                     "</div>"
-                ],
-                "designer|displayName": "itemTpl"
+                ]
             },
             "designerId": "4cfcb99e-75d4-47a7-9f80-13d9b74fc559",
             "cn": [
@@ -42,11 +41,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "timeAgoInWords",
-                        "fn": "timeAgoInWords",
                         "designer|params": [
                             "date"
                         ],
+                        "fn": "timeAgoInWords",
                         "implHandler": [
                             "try {",
                             "    var now = Math.ceil(Number(new Date()) / 1000),",

@@ -18,7 +18,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "addRun",
+                "designer|controlQuery": "#addRunButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "addRun",
                 "implHandler": [
                     "var distance = Ext.getCmp('distanceField').getValue(),",
@@ -45,9 +46,7 @@
                     "    scope: this",
                     "});"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "#addRunButton"
+                "name": "tap"
             },
             "designerId": "b63bfcf5-d270-4300-a7e1-20767c55577f"
         },
@@ -59,7 +58,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "showForm",
+                "designer|controlQuery": "#showFormButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "showForm",
                 "implHandler": [
                     "if (!this.addRunForm) {",
@@ -69,9 +69,7 @@
                     "}",
                     "Ext.Viewport.setActiveItem(this.addRunForm);"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "#showFormButton"
+                "name": "tap"
             },
             "designerId": "e52a5905-890b-4089-bfcd-bbc792a9bec8"
         },
@@ -83,15 +81,14 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "hideForm",
+                "designer|controlQuery": "#addRunBackBtn",
+                "designer|targetType": "Ext.Button",
                 "fn": "hideForm",
                 "implHandler": [
                     "Ext.Viewport.setActiveItem(Ext.getCmp('main'));",
                     "Ext.getCmp('runForm').hide();"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "#addRunBackBtn"
+                "name": "tap"
             },
             "designerId": "d1a23272-fc54-46df-a6e7-32de24a50fee"
         },
@@ -103,11 +100,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "init",
-                "fn": "init",
                 "designer|params": [
                     "application"
                 ],
+                "fn": "init",
                 "implHandler": [
                     "this.callParent();",
                     "",
@@ -125,11 +121,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onRunsLoad",
-                "fn": "onRunsLoad",
                 "designer|params": [
                     "store"
                 ],
+                "fn": "onRunsLoad",
                 "implHandler": [
                     "var main = Ext.getCmp('main'),",
                     "    runList = Ext.getCmp('runList'),",
@@ -163,13 +158,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onAddRun",
-                "fn": "onAddRun",
                 "designer|params": [
                     "options",
                     "success",
                     "response"
                 ],
+                "fn": "onAddRun",
                 "implHandler": [
                     "Ext.getCmp('runForm').setMasked(false);",
                     "this.hideForm();",

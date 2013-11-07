@@ -18,11 +18,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "init",
-                "fn": "init",
                 "designer|params": [
                     "application"
                 ],
+                "fn": "init",
                 "implHandler": [
                     "window.fbAsyncInit = Ext.bind(this.onFacebookInit, this);",
                     "",
@@ -46,7 +45,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onUserTap",
+                "designer|controlQuery": "#signout",
+                "designer|targetType": "Ext.Button",
                 "fn": "onUserTap",
                 "implHandler": [
                     "if (!this.logoutCmp) {",
@@ -71,9 +71,7 @@
                     "this.logoutCmp.showBy(button);",
                     ""
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "#signout"
+                "name": "tap"
             },
             "designerId": "cf61d4f4-76ac-4df9-8327-62850104ff5e"
         },
@@ -85,7 +83,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onFacebookInit",
                 "fn": "onFacebookInit",
                 "implHandler": [
                     "if (JWF.app.facebookAppId === '') return;",
@@ -144,7 +141,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "login",
                 "fn": "login",
                 "implHandler": [
                     "Ext.Viewport.setMasked(false);",
@@ -165,7 +161,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onLogin",
                 "fn": "onLogin",
                 "implHandler": [
                     "var me = this,",
@@ -203,15 +198,14 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "logout",
+                "designer|controlQuery": "#logoutButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "logout",
                 "implHandler": [
                     "Ext.Viewport.setMasked({xtype: 'loadmask', message: 'Logging out...'});",
                     "FB.logout();"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "#logoutButton"
+                "name": "tap"
             },
             "designerId": "79961892-c15a-41cf-a30c-8d45465dd975"
         },
@@ -223,7 +217,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onLogout",
                 "fn": "onLogout",
                 "implHandler": [
                     "if (!this.hasCheckedStatus) return;",
