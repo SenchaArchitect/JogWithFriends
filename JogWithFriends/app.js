@@ -26,10 +26,6 @@ Ext.application({
     requires: [
         'Ext.Loader'
     ],
-    viewport: {
-        autoMaximize: true
-    },
-
     models: [
         'Run'
     ],
@@ -58,6 +54,19 @@ Ext.application({
 
     launch: function() {
         this.facebookAppId = '';
+
+        // Here we need to inject some html into the page and an ID
+        Ext.getBody().set({
+            'id': 'rwf-body'
+        });
+
+        Ext.getBody().insertHtml('beforeEnd', '<div id="fb-root" style="display: none;"></div>' +
+        '<div id="splashLoader">' +
+        '    <div id="loading">' +
+        '        <span class="loadTxt">Loading</span>' +
+        '        <div class="x-loading-spinner"><span class="x-loading-top"></span><span class="x-loading-right"></span><span class="x-loading-bottom"></span><span class="x-loading-left"></span></div>' +
+        '    </div>' +
+        '</div>');
 
         if (this.facebookAppId === '') {
             Ext.create('Ext.Component', {

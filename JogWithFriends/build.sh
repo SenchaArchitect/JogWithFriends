@@ -2,12 +2,8 @@
 
 echo "Building JogWithFriends"
 
-rm -rf server-side/public/resources
-cp -r resources server-side/public
-mkdir -p server-side/public/resources/js
-
-cp -r app/* server-side/public/resources/js
-cp index.html server-side/public/index.html
-cp app.js server-side/public/resources/js/app.js
+rm -rf server-side/public/*
+cp -r build/testing/JWF/ server-side/public
+cp -rf resources/project-images server-side/public
 
 echo "Done!"
