@@ -45,6 +45,19 @@
                 "implHandler": [
                     "this.facebookAppId = '';",
                     "",
+                    "// Here we need to inject some html into the page and an ID",
+                    "Ext.getBody().set({",
+                    "    'id': 'rwf-body'",
+                    "});",
+                    "",
+                    "Ext.getBody().insertHtml('beforeEnd', '<div id=\"fb-root\" style=\"display: none;\"></div>' +",
+                    "'<div id=\"splashLoader\">' +",
+                    "'    <div id=\"loading\">' +",
+                    "'        <span class=\"loadTxt\">Loading</span>' +",
+                    "'        <div class=\"x-loading-spinner\"><span class=\"x-loading-top\"></span><span class=\"x-loading-right\"></span><span class=\"x-loading-bottom\"></span><span class=\"x-loading-left\"></span></div>' +",
+                    "'    </div>' +",
+                    "'</div>');",
+                    "",
                     "if (this.facebookAppId === '') {",
                     "    Ext.create('Ext.Component', {",
                     "        fullscreen: true,",
@@ -58,18 +71,6 @@
                 ]
             },
             "designerId": "5e30f45a-f6db-490b-8654-a68d9689909a"
-        },
-        {
-            "type": "Ext.Viewport",
-            "reference": {
-                "name": "viewport",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "autoMaximize": true
-            },
-            "designerId": "0a7c75cd-f3da-4b72-8515-ff613a263e32"
         },
         {
             "type": "Ext.Loader",

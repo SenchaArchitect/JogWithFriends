@@ -3,8 +3,8 @@
     "settings": {
         "cmd": {
             "license": "commercial",
-            "cmdVersion": "4.0.1.33",
-            "frameworkVersion": "2.1.1.594"
+            "cmdVersion": "4.0.1.45",
+            "frameworkVersion": "2.3.0.328"
         },
         "urlPrefix": "",
         "spacesToIndent": 4,
@@ -29,12 +29,16 @@
             },
             "viewportOrientation": "portrait"
         },
-        "generateArchitectVersion": true
+        "generateArchitectVersion": true,
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        }
     },
     "xdsVersion": "3.0.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 300000000002,
+    "upgradeVersion": 300000000003,
     "framework": "touch23",
     "viewOrderMap": {
         "view": [
@@ -56,7 +60,7 @@
         ],
         "resource": [
             "2ff46d81-88e0-4df1-a547-3275eb0735aa",
-            "d5acbb29-b98c-4462-a6e2-1d904a051510"
+            "d2970fba-2072-4e25-a5f9-5e4b95bed204"
         ],
         "app": [
             "application"
